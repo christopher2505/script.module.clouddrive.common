@@ -16,6 +16,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #-------------------------------------------------------------------------------
+from clouddrive.common.ui.logger import Logger
 
 
 class Utils:
@@ -116,7 +117,7 @@ class Utils:
     @staticmethod
     def get_mimetype_by_extension(extension):
         return Utils.get_safe_value(Utils._extension_map, Utils.default(extension, ''))
-
+    
     @staticmethod
     def remove_folder(folder_path, system_monitor=None):
         from clouddrive.common.ui.utils import KodiUtils
@@ -127,3 +128,14 @@ class Utils:
                 return False
             return KodiUtils.rmdir(folder_path, True)
         return True
+    
+    @staticmethod
+    def get_source_id(ip):
+        data = ip.split('.')
+        source_id = 0
+        Logger.debug("ip is:" + ip)
+        for n in data:
+            Logger.debug("part: " + n)
+            source_id += int(n)
+        return source_id
+    
