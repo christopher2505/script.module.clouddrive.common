@@ -20,11 +20,6 @@
 			<icon>icon.png</icon>
 		</assets>
 		<news>
-v1.2.12 released Mar 03, 2020:
-- Option to export '.nfo' files
-- Option to remove exported local files
-- Ability to automatically update the 'watched' folder. Add, rename, remove functions works properly now.
-- '.zip' files removed from the export list
 v1.2.11 released Feb 26, 2020:
 - Fix playback
 		</news>
