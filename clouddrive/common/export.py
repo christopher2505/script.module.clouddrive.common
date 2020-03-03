@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 #-------------------------------------------------------------------------------
 # Copyright (C) 2017 Carlos Guzman (cguZZman) carlosguzmang@protonmail.com
 # 
